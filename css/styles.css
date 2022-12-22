@@ -1,8 +1,28 @@
-@use "project-colors";
+@use "project-elements";
+:root {
+  --bg-color1: #ffffff;
+  --bg-color2: #2e2f42;
+  --text-color1: #2e2f42;
+  --text-color2: #434455;
+  --accent-color: #4d5ae5;
+  --hover-color: #404bbf;
+  --logo-text: Raleway;
+  --title1-weight: 700;
+  --title1-size: 36px;
+  --title1-height: 1.11;
+  --title2-weight: 500;
+  --title2-size: 20px;
+  --title2-height: 1.2;
+}
+
 body {
   font-family: Roboto;
-  color: #2e2f42;
-  background-color: #ffffff;
+  color: var(--text-color1);
+  background-color: var(--bg-color1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 button {
@@ -23,12 +43,12 @@ a {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
-  font-family: Raleway;
+  color: var(--text-color1);
+  font-family: var(--logo-text);
   text-decoration: none;
 }
 .logo .logo_accent {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .footer_logo {
@@ -36,69 +56,60 @@ a {
 }
 
 .filters_button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #4d5ae5;
+  font-weight: var(--title2-weight);
+  color: var(--accent-color);
   background-color: #f4f4fd;
 }
 .filters_button:hover, .filters_button:focus {
   color: #ffffff;
-  background-color: #404bbf;
+  background-color: var(--hover-color);
+}
+
+.footer {
+  background-color: var(--bg-color2);
+}
+
+.footer_paragraf {
+  color: #e7e9fc;
 }
 
 .header_nav-list {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-weight: var(--title2-weight);
 }
 
 .header_nav-link {
-  color: #2e2f42;
+  color: var(--text-color1);
 }
 .header_nav-link:hover, .header_nav-link:focus {
-  color: #404bbf;
-}
-
-.header_contacts-list {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  color: var(--hover-color);
 }
 
 .header_contact-link {
-  color: #434455;
+  color: var(--text-color2);
   font-style: normal;
 }
 .header_contact-link:hover, .header_contact-link:focus {
-  color: #404bbf;
+  color: var(--hover-color);
 }
 
 .hiro {
-  background-color: #2e2f42;
+  background-color: var(--bg-color2);
 }
 
 .hiro_title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
-  letter-spacing: 0.02em;
   color: #ffffff;
 }
 
 .hiro_button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  font-weight: var(--title2-weight);
   color: #ffffff;
-  background-color: #4d5ae5;
+  background-color: var(--accent-color);
 }
 .hiro_button:hover, .hiro_button:focus {
-  background-color: #404bbf;
+  background-color: var(--hover-color);
 }
 
 .our-team {
@@ -106,61 +117,46 @@ a {
 }
 
 .our-team_title {
-  font-size: 36px;
-  line-height: 1.11;
+  font-size: var(--title1-size);
+  line-height: var(--title1-height);
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
 .our-team_list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: var(--title2-weight);
+  font-size: var(--title2-size);
+  line-height: var(--title2-height);
   letter-spacing: 0.02em;
 }
 
-.our-team_list-paragraf {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.projects_link {
+  color: var(--text-color1);
 }
 
 .projects_title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: var(--title2-weight);
+  font-size: var(--title2-size);
+  line-height: var(--title2-height);
 }
 
 .projects_paragrad {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text-color2);
 }
 
 .quality_list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: var(--title2-weight);
+  font-size: var(--title2-size);
+  line-height: var(--title2-height);
 }
 
 .quality_list-paragraf {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text-color2);
 }
 
 .what-we-do_title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
+  font-size: var(--title1-size);
+  line-height: var(--title1-height);
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
 }

@@ -2,10 +2,8 @@
 }
 
 .what-we-do_title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
+  font-size: var(--title1-size);
+  line-height: var(--title1-height);
   text-align: center;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
 }

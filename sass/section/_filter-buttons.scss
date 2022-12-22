@@ -1,17 +1,11 @@
-.filters {
-}
-
 .filters_button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: $accent-color;
+  font-weight: var(--title2-weight);
+  color: var(--accent-color);
   background-color: #f4f4fd;
 
   &:hover,
   &:focus {
     color: #ffffff;
-    background-color: $hover-color;
+    background-color: var(--hover-color);
   }
 }

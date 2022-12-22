@@ -1,16 +1,13 @@
-.projects {
+.projects_link {
+  color: var(--text-color1);
 }
 
 .projects_title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: var(--title2-weight);
+  font-size: var(--title2-size);
+  line-height: var(--title2-height);
 }
 
 .projects_paragrad {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: $text-color2;
+  color: var(--text-color2);
 }

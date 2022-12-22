@@ -1,7 +1,7 @@
-@use "project-colors";
+@use "project-elements";
 
 // bace
-@import "./bace/project-colors";
+@import "./bace/project-elements";
 @import "./bace/_bace.scss";
 @import "./bace/container";
 @import "./bace/logo";

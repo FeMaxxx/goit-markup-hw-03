@@ -2,16 +2,11 @@
 }
 
 .quality_list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: var(--title2-weight);
+  font-size: var(--title2-size);
+  line-height: var(--title2-height);
 }
 
 .quality_list-paragraf {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: $text-color2;
+  color: var(--text-color2);
 }
