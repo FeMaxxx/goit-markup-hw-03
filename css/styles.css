@@ -15,6 +15,10 @@
   --title2-height: 1.2;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto;
   color: var(--text-color1);
@@ -27,14 +31,47 @@ body {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 1152px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .logo {
@@ -55,25 +92,66 @@ a {
   color: #f4f4fd;
 }
 
+.filters_list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
 .filters_button {
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
   font-weight: var(--title2-weight);
   color: var(--accent-color);
   background-color: #f4f4fd;
 }
 .filters_button:hover, .filters_button:focus {
+  border: 1px solid var(--hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
   background-color: var(--hover-color);
 }
 
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: var(--bg-color2);
+}
+
+.footer_logo {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer_info-box {
+  width: 264px;
 }
 
 .footer_paragraf {
   color: #e7e9fc;
 }
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header .container {
+  display: flex;
+}
+.header .logo {
+  margin-right: 76px;
+}
+
+.header_nav {
+  display: flex;
+}
+
 .header_nav-list {
+  display: flex;
+  gap: 40px;
   font-weight: var(--title2-weight);
 }
 
@@ -82,6 +160,15 @@ a {
 }
 .header_nav-link:hover, .header_nav-link:focus {
   color: var(--hover-color);
+}
+
+.header_contacts {
+  margin-left: auto;
+}
+
+.header_contacts-list {
+  gap: 40px;
+  display: flex;
 }
 
 .header_contact-link {
@@ -97,6 +184,7 @@ a {
 }
 
 .hiro_title {
+  margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -104,8 +192,14 @@ a {
 }
 
 .hiro_button {
-  font-weight: var(--title2-weight);
+  display: block;
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   color: #ffffff;
+  font-weight: var(--title2-weight);
   background-color: var(--accent-color);
 }
 .hiro_button:hover, .hiro_button:focus {
@@ -117,24 +211,59 @@ a {
 }
 
 .our-team_title {
+  margin-bottom: 72px;
   font-size: var(--title1-size);
   line-height: var(--title1-height);
   text-align: center;
   text-transform: capitalize;
 }
 
+.our-team_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-team_point {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+
+.our-team_text-box {
+  padding: 32px 16px;
+}
+
 .our-team_list-title {
+  margin-bottom: 8px;
+  text-align: center;
   font-weight: var(--title2-weight);
   font-size: var(--title2-size);
   line-height: var(--title2-height);
   letter-spacing: 0.02em;
 }
 
+.our-team_list-paragraf {
+  text-align: center;
+}
+
+.projects_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
 .projects_link {
   color: var(--text-color1);
 }
 
+.projects_text-box {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0px;
+}
+
 .projects_title {
+  margin-bottom: 8px;
   font-weight: var(--title2-weight);
   font-size: var(--title2-size);
   line-height: var(--title2-height);
@@ -144,7 +273,21 @@ a {
   color: var(--text-color2);
 }
 
+.quality.section {
+  padding-bottom: 0px;
+}
+
+.quality_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quality_list-point {
+  width: 264px;
+}
+
 .quality_list-title {
+  margin-bottom: 8px;
   font-weight: var(--title2-weight);
   font-size: var(--title2-size);
   line-height: var(--title2-height);
@@ -154,7 +297,13 @@ a {
   color: var(--text-color2);
 }
 
+.what-we-do_list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .what-we-do_title {
+  margin-bottom: 72px;
   font-size: var(--title1-size);
   line-height: var(--title1-height);
   text-align: center;
